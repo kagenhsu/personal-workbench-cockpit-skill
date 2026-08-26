@@ -1,0 +1,30 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python/cache files from optional validation helpers
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local secrets and private project state
+.env
+.env.*
+*.local
+.console-builder/
+.workbench/
+vault/
+private/
+secrets/
+
+# Build and temporary output
+dist/
+build/
+coverage/
+*.log
+tmp/
+temp/

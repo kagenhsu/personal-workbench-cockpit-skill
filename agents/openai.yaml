@@ -1,0 +1,6 @@
+interface:
+  display_name: "個人工作台駕駛艙"
+  short_description: "從需求、資料邊界到可驗收交付，建立與持續演化個人工作台"
+  default_prompt: "使用 $personal-workbench-cockpit 協助我建立或延續個人工作台與 AI 駕駛艙。"
+policy:
+  allow_implicit_invocation: true
