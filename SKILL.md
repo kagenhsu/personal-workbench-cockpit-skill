@@ -37,6 +37,22 @@ description: "設計、建立、延續、改版或教學個人工作台、AI 駕
 
 明確錯誤（例如「按鈕按了沒反應」）直接進入診斷；若無法判斷是錯誤還是使用摩擦，只問一題確認「功能沒有作用」或「功能可以用但不順」即可。
 
+## UI／UX 專用搭配
+
+只有當需求會改變畫面外觀、資訊層級、互動方式、響應式行為、可用性或無障礙時，才搭配本機的 `ui-ux-pro-max` Skill。它是 UI 設計與檢查工具，不取代本 Skill 的痛點探索、資料安全或開發守門。
+
+搭配順序固定為：
+
+```text
+痛點確認 → 方案選擇 → 讀取現有 UI → UI/UX 設計檢查 → 使用者核准 → 實作 → 畫面驗收
+```
+
+- 新頁面、重大版型或設計系統：先使用 UI Skill 的 design-system 流程，再提出 1～3 個版型方案。
+- 細部 UI 修改：只查與本次問題相關的 UX、layout、accessibility、color 或 interaction 規則，不重做整套設計。
+- 網頁專案：依實際 Web 技術棧調整 UI Skill 的建議；不可因 Skill 內含 React Native 範例，就把專案改成 React Native，也不可執行不適用的 stack 指令。
+- 純後端、資料庫、檔案格式或明確功能錯誤：不因工作台有畫面就自動使用 UI Skill。
+- UI Skill 產生的設計規則與搜尋結果只能存入目前專案的設計文件，不寫入正式 Vault，也不把第三方完整內容複製進本 Skill。
+
 ## 判斷工作模式
 
 - **探索**：先確認痛點、使用情境與期望結果，提出 3～5 個方向或 2～3 個解決方案；未選定方向前停止，不開始開發。
@@ -78,9 +94,10 @@ description: "設計、建立、延續、改版或教學個人工作台、AI 駕
 
 1. 若不是明確錯誤，先完成痛點探索、使用情境確認與方案選擇；自然語言不足時由 Skill 主動提供選項，不要求使用者記提示詞。
 2. 再用短開發契約回述目標、P0 功能、資料真相、範圍與驗收方式。
-3. 只問一個仍會改變結果的關鍵問題；已由專案證據確定的答案不要重問。
-4. 檢查目前分支與未提交修改。既有修改視為使用者內容，不重置、不覆寫、不大範圍格式化。
-5. 只改核准範圍內的檔案；若與既有修改重疊，先停下說明。
+3. UI 任務依「UI／UX 專用搭配」完成設計檢查；重大版型要先取得版型核准。
+4. 只問一個仍會改變結果的關鍵問題；已由專案證據確定的答案不要重問。
+5. 檢查目前分支與未提交修改。既有修改視為使用者內容，不重置、不覆寫、不大範圍格式化。
+6. 只改核准範圍內的檔案；若與既有修改重疊，先停下說明。
 
 重大改版依序記錄：
 
@@ -120,5 +137,6 @@ discovery-brief → option-selected → spec-approved → ui-approved
 - 來源與整合範圍：`references/integration-map.md`
 - 需求訪談與開發契約：`references/intake-and-contract.md`
 - 架構決策：`references/architecture-decisions.md`
+- UI／UX Pro Max 搭配：`references/ui-ux-companion.md`
 - 驗收：`references/acceptance-checklists.md`
 - 持續演化：`references/evolution-and-teaching.md`

@@ -42,6 +42,18 @@
       "prompt": "我要把這個工作台備份到新的 GitHub repo，請先檢查哪些檔案可能含有 Vault 路徑、密碼、API Key 或工作紀錄，再列出可安全備份的範圍。先不要 push。",
       "expected_output": "先做唯讀敏感資料檢查，區分可備份與不可備份內容，明確說明尚未 push，並等待使用者確認外部發布。",
       "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "首頁太亂，我看不到今天要做什麼。",
+      "expected_output": "先用 personal-workbench-cockpit 確認痛點與方案；使用者選定後，才搭配 ui-ux-pro-max 檢查資訊層級與響應式，不直接重做首頁。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "只修正 API 驗證，不改畫面。",
+      "expected_output": "不啟動 ui-ux-pro-max，只使用工作台的資料與安全規則。",
+      "files": []
     }
   ]
 }
