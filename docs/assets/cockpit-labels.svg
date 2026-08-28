@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">推看決令工作駕駛艙詳細說明</title>
+  <desc id="desc">以手繪工作桌與四個紙張區塊說明推、看、決、令的資料與行動</desc>
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.3" fill="#d9cbaa" opacity=".5"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#171717" flood-opacity=".13"/>
+    </filter>
+    <style>
+      .ink { fill: #171717; font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; }
+      .title { font-size: 30px; font-weight: 800; }
+      .body { font-size: 20px; font-weight: 600; }
+      .small { font-size: 16px; font-weight: 700; }
+      .line { fill: none; stroke: #171717; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <rect width="1280" height="760" fill="#f7edda"/>
+  <rect width="1280" height="760" fill="url(#dots)"/>
+  <path d="M60 660c210-34 345 19 560-6 241-28 390 24 602-8" class="line" stroke="#b45309" stroke-width="3" opacity=".35"/>
+  <text x="66" y="68" class="ink title">今日工作駕駛艙</text>
+  <text x="66" y="101" class="ink body">先看到事實，再決定下一個動作</text>
+  <circle cx="1170" cy="72" r="11" fill="#22c55e"/>
+  <text x="1191" y="79" class="ink small">流程運轉中</text>
+
+  <g transform="translate(70 145) rotate(-2 245 205)" filter="url(#shadow)">
+    <rect width="490" height="410" rx="5" fill="#fffdf7" stroke="#171717" stroke-width="3"/>
+    <rect width="490" height="410" fill="none" stroke="#dc2626" stroke-width="9" opacity=".18"/>
+    <circle cx="55" cy="67" r="23" fill="#2563eb"/>
+    <text x="46" y="77" fill="#fff" font-size="28" font-weight="800">推</text>
+    <text x="96" y="68" class="ink title">推</text>
+    <text x="96" y="101" class="ink body">主動推送今日關鍵事實</text>
+    <path d="M48 150h394M48 166h312" class="line" stroke-width="3" opacity=".45"/>
+    <circle cx="75" cy="221" r="13" fill="#dc2626"/>
+    <text x="110" y="229" class="ink body">逾期與異常</text>
+    <circle cx="75" cy="276" r="13" fill="#facc15"/>
+    <text x="110" y="284" class="ink body">等待確認</text>
+    <circle cx="75" cy="331" r="13" fill="#22c55e"/>
+    <text x="110" y="339" class="ink body">新完成結果</text>
+    <text x="48" y="386" class="ink small">輸出：今天最需要先知道的事</text>
+  </g>
+
+  <g transform="translate(720 145) rotate(2 245 205)" filter="url(#shadow)">
+    <rect width="490" height="410" rx="5" fill="#fffdf7" stroke="#171717" stroke-width="3"/>
+    <circle cx="55" cy="67" r="23" fill="#171717"/>
+    <text x="45" y="77" fill="#fff" font-size="28" font-weight="800">看</text>
+    <text x="96" y="68" class="ink title">看</text>
+    <text x="96" y="101" class="ink body">整合工作與專案全局</text>
+    <path d="M52 171c72-54 147-45 220 0 72 45 125 54 169 5" class="line" stroke="#2563eb"/>
+    <circle cx="74" cy="210" r="12" fill="#2563eb"/>
+    <circle cx="216" cy="210" r="12" fill="#facc15"/>
+    <circle cx="358" cy="210" r="12" fill="#22c55e"/>
+    <path d="M74 210v75M216 210v75M358 210v75M74 285h284" class="line" stroke-width="3"/>
+    <text x="45" y="329" class="ink body">目前在哪裡</text>
+    <text x="190" y="329" class="ink body">卡在哪裡</text>
+    <text x="332" y="329" class="ink body">下一步</text>
+    <text x="48" y="386" class="ink small">輸出：一眼掌握全局與變化</text>
+  </g>
+
+  <path d="M560 342h126" class="line" stroke="#dc2626" stroke-width="4"/>
+  <path d="m674 326 27 16-27 16" class="line" stroke="#dc2626" stroke-width="4"/>
+
+  <g transform="translate(70 580)">
+    <rect width="490" height="92" rx="8" fill="#fffdf7" stroke="#171717" stroke-width="3"/>
+    <circle cx="55" cy="46" r="23" fill="#facc15"/>
+    <text x="45" y="56" fill="#171717" font-size="28" font-weight="800">決</text>
+    <text x="96" y="41" class="ink title">決</text>
+    <text x="96" y="70" class="ink small">比較依據，提出下一個行動</text>
+  </g>
+  <g transform="translate(720 580)">
+    <rect width="490" height="92" rx="8" fill="#fffdf7" stroke="#171717" stroke-width="3"/>
+    <circle cx="55" cy="46" r="23" fill="#22c55e"/>
+    <text x="45" y="56" fill="#fff" font-size="28" font-weight="800">令</text>
+    <text x="96" y="41" class="ink title">令</text>
+    <text x="96" y="70" class="ink small">拆成任務，追蹤結果再回寫</text>
+  </g>
+</svg>

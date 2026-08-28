@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="個人工作台 Skill 組合提示詞與驗收流程">
+  <title>提示詞中心｜個人工作台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="prompts" data-title="提示詞中心">
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="site-header" data-site-header></header>
+  <aside class="site-sidebar" data-site-sidebar></aside>
+  <div class="sidebar-overlay" data-sidebar-overlay></div>
+  <main class="doc-main" id="main">
+    <div class="doc-wrap">
+      <article data-doc>
+        <header class="article-header">
+          <p class="eyebrow">05 · 開始使用</p>
+          <h1 class="article-title">從 Skill 組合開始，到完成驗收</h1>
+          <p class="article-lede">每一站都有可以直接複製的提示詞，提示詞是捷徑，不是使用門檻</p>
+          <div class="article-meta"><span class="tag">先釐清</span><span class="tag">再設計</span><span class="tag">接到開發</span><span class="tag">完成驗收</span></div>
+        </header>
+
+        <section class="content-section" id="how-to-use">
+          <p class="section-label">使用方法</p>
+          <h2 id="how-to-use-title">把每一站的成果交給下一站</h2>
+          <p>請依照順序複製提示詞使用，也可以把自己的情境補在最後一行，沒有安裝的 Skill 先不要假設可用</p>
+          <ol class="step-list">
+            <li><div><strong>先釐清問題</strong><p>先確認誰在用、每天處理什麼、流程怎麼跑與最後要看到什麼</p></div></li>
+            <li><div><strong>再整理規格</strong><p>把痛點變成目標、頁面、資料、狀態與驗收條件</p></div></li>
+            <li><div><strong>接上設計與開發</strong><p>把可編輯設計規範交給 MCP 與 Agent，形成可以落地的開發包</p></div></li>
+            <li><div><strong>最後驗收與優化</strong><p>確認流程真的能跑，再把使用結果回寫成下一次修改依據</p></div></li>
+          </ol>
+        </section>
+
+        <section class="content-section" id="start">
+          <p class="section-label">01 · 開始製作</p>
+          <h2 id="start-title">先用個人工作台 Skill 找到真正痛點</h2>
+          <p>適合第一次建立工作台，也適合不知道該從哪個功能開始時使用</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/personal-workbench-cockpit
+/grill-me
+
+我要開始製作一個個人工作台或 AI 駕駛艙，請先判斷我是在新建、修改、增加功能、調整首頁，還是處理錯誤
+請由 grill-me 一次問我一個最重要的問題，先確認目標使用者、每天反覆處理的事情、從輸入到完成的流程，以及最後要看到的進度、風險或復盤
+不要先畫漂亮畫面，也不要直接寫程式，請先整理目前痛點與下一個問題</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout yellow"><strong>這一站的成果</strong><p>一份已確認的痛點與四項藍圖</p></div>
+        </section>
+
+        <section class="content-section" id="pm">
+          <p class="section-label">02 · PM 規格</p>
+          <h2 id="pm-title">把痛點整理成可交接的產品規格</h2>
+          <p>確認問題後，再用 PM Skill 梳理產品結構與驗收條件</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/pm-workbench-planner
+/grill-me
+
+請根據剛才確認的痛點，整理一份可以交給設計與開發的產品規格
+請逐項確認目標用戶、核心場景、頁面結構、每天反覆處理的項目、資料流程、權限、狀態、通知與驗收條件
+如果資訊不足，請一次只問一個會改變結果的問題，不要自行補齊關鍵需求
+最後請輸出最小可行版本、暫不處理範圍、成功指標與驗收清單</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout blue"><strong>這一站的成果</strong><p>產品結構、資料流程、最小版本與驗收清單</p></div>
+        </section>
+
+        <section class="content-section" id="design">
+          <p class="section-label">03 · 設計規範</p>
+          <h2 id="design-title">先做整套設計規則，再做單頁畫面</h2>
+          <p>設計的目標是可編輯、可覆用、可協作與可交給開發，不是只生成一張漂亮圖片</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/emil-design-eng
+/ui-ux-pro-max
+/impeccable
+
+請根據已確認的 PM 規格，先整理這個系統、網站或行動 App 的設計規範
+請先確認以上 Skill 是否已安裝，沒有安裝的 Skill 不要假設可用
+請確認目標用戶、核心場景、頁面結構、大圖比例、卡片層級、顏色變量、字體層級、組件狀態與手機版行為
+請避免企業簡報風格與無意義裝飾，優先建立可讀、可操作、可延伸的資訊層級
+請先輸出設計決策與元件規則，再提出高保真設計源文件的製作方式</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout red"><strong>這一站的成果</strong><p>完整 UI／UX 規範、元件狀態與可延伸的設計源文件要求，<code>impeccable</code> 未安裝時改用 <code>ui-ux-pro-max</code> 與本 Skill 驗收規則</p></div>
+        </section>
+
+        <section class="content-section" id="mcp">
+          <p class="section-label">04 · MCP 交接</p>
+          <h2 id="mcp-title">讓設計資訊可以被工具與 Agent 讀取</h2>
+          <p>這一站不是重新猜畫面，而是盤點設計稿、資料來源、MCP 連線與 Agent 分工</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/console-builder
+
+請根據已確認的 PM 規格與設計規範，盤點這個專案需要的 MCP 連線、資料來源與 Agent 分工
+請說明每個 MCP 提供什麼設計或資料資訊，哪個 Agent 負責規劃、哪個 Agent 負責實作，以及每一站的輸入與輸出
+請保留人工確認點，不要直接連線、發布、寫入正式資料或執行外部動作
+最後請輸出開發交接包與待確認清單</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout"><strong>這一站的成果</strong><p>MCP 能力盤點、Agent 分工與開發交接包</p></div>
+        </section>
+
+        <section class="content-section" id="build">
+          <p class="section-label">05 · 開發落地</p>
+          <h2 id="build-title">從設計源文件做出真的能用的產品</h2>
+          <p>把頁面、互動、資料流程與狀態一起落地，不把成果停在圖片或靜態展示</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/console-builder
+
+請依照產品規格、設計規範、設計源文件與 MCP 交接包開始開發
+請先列出要修改或建立的檔案，再實作頁面、互動、資料流程、錯誤狀態、空白狀態、載入狀態與手機版
+請使用 D2C 方式把設計變量、元件狀態與資料欄位轉成程式，不要把單張圖片或範例代碼當成完成產品
+每完成一個小範圍就說明已完成內容與尚未確認的部分，不要把正式寫入、發布、通知或外部服務動作當成已完成
+最後請提供本機啟動方式、測試方式、已知限制與驗收入口</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout green"><strong>這一站的成果</strong><p>可以操作的網站或 App 開發版本與本機驗收入口</p></div>
+        </section>
+
+        <section class="content-section" id="acceptance">
+          <p class="section-label">06 · 完成驗收</p>
+          <h2 id="acceptance-title">確認做出來的不是只有畫面</h2>
+          <p>驗收要同時看流程、資料、操作、狀態、安全與手機版</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/personal-workbench-cockpit
+/emil-design-eng
+/ui-ux-pro-max
+
+請對目前完成的工作台或駕駛艙進行完整驗收
+請依照輸入、執行、結果、下一步檢查完整流程，並確認推、看、決、令是否真的對應到資料、操作與結果紀錄
+請檢查功能是否可用、錯誤與空白狀態、手機版、文字可讀性、元件狀態、無障礙、敏感資料與正式外部動作確認點
+請把結果分成通過、待確認、阻塞與不在本次範圍，列出重現步驟與最小修正方案</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout green"><strong>這一站的成果</strong><p>驗收報告、問題清單、重現步驟與可執行修正方案</p></div>
+        </section>
+
+        <section class="content-section" id="optimize">
+          <p class="section-label">07 · 持續優化</p>
+          <h2 id="optimize-title">根據使用結果繼續修改工作台</h2>
+          <p>完成驗收不是結束，真正使用後要把不順、遺漏與結果回寫成下一輪改進</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/personal-workbench-cockpit
+/grill-me
+/emil-design-eng
+
+這個工作台已經完成初版驗收，以下是實際使用後的觀察與結果
+請先整理目前最明顯的痛點，一次只問我一個最重要的問題，再提出兩到三個最小修改方案
+每個方案請說明解決的痛點、使用方式、優點、限制、修改範圍與驗收方式
+使用者選定方案後才修改檔案，完成後請重新驗收流程、資料、手機版與結果回寫</pre><span class="copy-status" aria-live="polite"></span></div>
+          <div class="callout yellow"><strong>這一站的成果</strong><p>下一輪最小修改、驗收結果與新的使用紀錄</p></div>
+        </section>
+
+        <section class="content-section" id="repair">
+          <p class="section-label">錯誤分支</p>
+          <h2 id="repair-title">明確錯誤直接進入診斷</h2>
+          <p>如果是按鈕沒有反應、資料沒有保存或頁面報錯，不需要重新做完整痛點訪談</p>
+          <div class="code-card"><button class="copy-button" type="button" data-copy>複製</button><pre>/diagnose
+
+這個工作台發生明確錯誤：請描述錯誤現象、重現步驟、預期結果與實際結果
+請先診斷原因與影響範圍，再提出最小修正方式與驗證方法
+不要先重做整個畫面，也不要直接修改正式資料</pre><span class="copy-status" aria-live="polite"></span></div>
+        </section>
+
+        <section class="content-section" id="notes">
+          <p class="section-label">使用提醒</p>
+          <h2 id="notes-title">提示詞可以改成你的話</h2>
+          <p>你也可以直接說「我想做一個個人工作台」、「首頁太亂」或「這裡用起來不順」，Skill 會先判斷情境並用選擇題協助釐清</p>
+          <div class="callout yellow"><strong>安全邊界</strong><p>AI 先產生草稿，正式寫入、發布、通知與外部動作都要經過使用者確認</p></div>
+          <div class="progress-panel"><p>完成提示詞流程後，查看安全邊界</p><div class="progress-actions"><button class="progress-button" type="button" data-progress-key="prompts">標記完成</button><a class="text-button" href="guardrails.html">下一頁：安全邊界</a></div></div>
+        </section>
+
+        <footer class="page-footer"><a href="usage.html">← 使用教學</a><a href="guardrails.html">下一頁：安全邊界 →</a></footer>
+      </article>
+      <aside class="toc" data-toc></aside>
+    </div>
+  </main>
+  <button class="back-top" type="button" data-back-top>回到頂端 ↑</button>
+  <script src="app.js" defer></script>
+</body>
+</html>

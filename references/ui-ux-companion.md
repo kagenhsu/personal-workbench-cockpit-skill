@@ -2,7 +2,7 @@
 
 ## 目的
 
-當個人工作台需求涉及畫面、資訊層級、互動、響應式、可用性或無障礙時，使用本機 `ui-ux-pro-max` Skill 作為 UI 專用設計與檢查工具。
+當個人工作台需求涉及畫面、資訊層級、互動、響應式、可用性或無障礙時，使用本機 `ui-ux-pro-max` Skill 作為 UI 專用設計與檢查工具，並在可用時搭配 `impeccable` 做介面品質與反模式檢查。
 
 它不負責判斷使用者真正的痛點，也不負責決定正式資料、權限、備份或是否可以直接修改產品。這些仍由 `personal-workbench-cockpit` 管理。
 
@@ -14,11 +14,16 @@
 4. 新頁面或重大改版使用 UI Skill 的 `--design-system` 流程取得設計方向與反模式。
 5. 細部修改只查相關 domain，例如 `ux`、`style`、`color`、`typography` 或 `chart`。
 6. 將設計結果整理成專案內的設計契約；若使用 `--persist`，只存到目前專案的 `design-system/MASTER.md` 與頁面覆寫文件。
-7. 重大版型先取得 UI 核准；完成後做實際桌面與手機畫面驗收。
+7. 新頁面或重大改版依 `impeccable` 的 context／playbook／craft-floor 順序檢查；只讀與本次介面相關的 playbook，不複製完整 Skill 到本 repo。
+8. 重大版型先取得 UI 核准；完成後做一次批次桌面與手機畫面驗收，修正後最多再確認一次。
 
 ## Web 專案限制
 
 目前 UI Skill 的說明同時提到 HTML/CSS 等技術，但部分 stack 流程以 React Native 為例。實際工作台若是 Web，使用通用的設計系統與 UX 規則，並依專案現有技術棧實作；除非專案本身是 React Native，否則不要執行 React Native 專用指令或改變技術棧。
+
+## 設計靈感資源
+
+需要研究視覺方向時，讀 `design-inspiration-libraries.md`。先確認痛點與使用流程，再選 1～2 個資源，將研究結果寫入設計契約，不把靈感庫當成可以整套搬入專案的元件包
 
 ## 最低檢查範圍
 
@@ -33,6 +38,7 @@
 ## 不採用
 
 - 不把 UI Skill 的完整 SKILL.md 複製到本 Skill。
+- 不把 `impeccable` 的完整 SKILL.md 或 reference playbook 複製到本 Skill；只記錄何時搭配與如何驗收。
 - 不因 UI 建議而擅自新增功能、修改資料模型或重建整個首頁。
 - 不把設計建議當成已完成的 UI 驗收證據。
 - 不為純後端、資料庫或明確錯誤修正強行啟動 UI 設計流程。
